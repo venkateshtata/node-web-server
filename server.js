@@ -48,9 +48,15 @@ res.render('welcome.hbs',{
 });
 app.get('/about', (req, res)=>{
 res.render('about.hbs',{
-  pageTitle: 'Welcome',
+  pageTitle: 'Welcome'
   //currentYear: new Date().getFullYear()
 });
+});
+
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    pageTitle: 'Projects'
+  });
 });
 
 app.get('/bad',(req, res) =>{
